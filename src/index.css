@@ -1,0 +1,42 @@
+/* Global Reset & Base Styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-primary: 'Georgia', 'Cambria', 'Times New Roman', serif;
+    --font-heading: 'Georgia', 'Cambria', serif;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --shadow-text: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: bold;
+}
+
+.app {
+    width: 100%;
+}

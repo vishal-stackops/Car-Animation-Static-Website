@@ -1,0 +1,48 @@
+.car-section {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.car-section.parallax-fixed {
+  background-attachment: fixed;
+}
+
+.car-content {
+  max-width: 800px;
+  padding: 2rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.car-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.car-description {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.6;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
